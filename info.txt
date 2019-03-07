@@ -1,0 +1,21 @@
+REACT RARES
+
+
+ - {...props} in parent for passing props to and fro from a grand parent and child.
+ - style={{listStyle: "none"}} for styling
+ - 
+
+
+
+
+Try out
+
+component communication - grand parent, sibling...2 parents with different events from  child
+
+add delete and change of list and keys
+
+https://www.codementor.io/blog/web-developer-interview-questions-3ey8yl7epg?utm_content=posts&utm_source=sendgrid&utm_medium=email&utm_term=post-3ey8yl7epg&utm_campaign=newsletter20190306
+
+
+fragment
+life cycle hooks
