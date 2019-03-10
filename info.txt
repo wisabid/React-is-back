@@ -19,3 +19,5 @@ https://www.codementor.io/blog/web-developer-interview-questions-3ey8yl7epg?utm_
 
 fragment
 life cycle hooks
+
+pure comps
