@@ -1,0 +1,1084 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Blog /> Edit link should be able to update an existing blog 1`] = `
+ReactWrapper {
+  Symbol(enzyme.__unrendered__): <UNDEFINED
+    edit={true}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "edit": true,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": <div
+          class="float-right tiny-font"
+        >
+          <span
+            id="cancelBtn"
+          >
+            Cancel
+          </span>
+           | 
+          <span
+            id="updateBtn"
+          >
+            Update
+          </span>
+        </div>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              id="cancelBtn"
+            >
+              Cancel
+            </span>,
+            " | ",
+            <span
+              id="updateBtn"
+            >
+              Update
+            </span>,
+          ],
+          "className": "float-right tiny-font",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": <span
+              id="cancelBtn"
+            >
+              Cancel
+            </span>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Cancel",
+              "id": "cancelBtn",
+              "onClick": undefined,
+            },
+            "ref": null,
+            "rendered": Array [
+              "Cancel",
+            ],
+            "type": "span",
+          },
+          " | ",
+          Object {
+            "instance": <span
+              id="updateBtn"
+            >
+              Update
+            </span>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Update",
+              "id": "updateBtn",
+              "onClick": undefined,
+            },
+            "ref": null,
+            "rendered": Array [
+              "Update",
+            ],
+            "type": "span",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": <input
+          maxlength="200"
+          name="blogheader"
+          size="115"
+          type="text"
+          value=""
+        />,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "maxLength": "200",
+          "name": "blogheader",
+          "onChange": undefined,
+          "onKeyUp": [Function],
+          "size": "115",
+          "type": "text",
+          "value": undefined,
+        },
+        "ref": [Function],
+        "rendered": Array [
+          undefined,
+        ],
+        "type": "input",
+      },
+      Object {
+        "instance": <br />,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": Array [
+          undefined,
+        ],
+        "type": "br",
+      },
+      Object {
+        "instance": <textarea
+          cols="104"
+          name="blogbody"
+          rows="10"
+        />,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "cols": "104",
+          "name": "blogbody",
+          "onChange": undefined,
+          "rows": "10",
+          "value": undefined,
+        },
+        "ref": [Function],
+        "rendered": Array [
+          undefined,
+        ],
+        "type": "textarea",
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "edit": true,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": <div
+            class="float-right tiny-font"
+          >
+            <span
+              id="cancelBtn"
+            >
+              Cancel
+            </span>
+             | 
+            <span
+              id="updateBtn"
+            >
+              Update
+            </span>
+          </div>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                id="cancelBtn"
+              >
+                Cancel
+              </span>,
+              " | ",
+              <span
+                id="updateBtn"
+              >
+                Update
+              </span>,
+            ],
+            "className": "float-right tiny-font",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <span
+                id="cancelBtn"
+              >
+                Cancel
+              </span>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Cancel",
+                "id": "cancelBtn",
+                "onClick": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                "Cancel",
+              ],
+              "type": "span",
+            },
+            " | ",
+            Object {
+              "instance": <span
+                id="updateBtn"
+              >
+                Update
+              </span>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Update",
+                "id": "updateBtn",
+                "onClick": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                "Update",
+              ],
+              "type": "span",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": <input
+            maxlength="200"
+            name="blogheader"
+            size="115"
+            type="text"
+            value=""
+          />,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "maxLength": "200",
+            "name": "blogheader",
+            "onChange": undefined,
+            "onKeyUp": [Function],
+            "size": "115",
+            "type": "text",
+            "value": undefined,
+          },
+          "ref": [Function],
+          "rendered": Array [
+            undefined,
+          ],
+          "type": "input",
+        },
+        Object {
+          "instance": <br />,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": Array [
+            undefined,
+          ],
+          "type": "br",
+        },
+        Object {
+          "instance": <textarea
+            cols="104"
+            name="blogbody"
+            rows="10"
+          />,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "cols": "104",
+            "name": "blogbody",
+            "onChange": undefined,
+            "rows": "10",
+            "value": undefined,
+          },
+          "ref": [Function],
+          "rendered": Array [
+            undefined,
+          ],
+          "type": "textarea",
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`<Blog /> renders Blog component without crashing 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <UNDEFINED
+    addblog={true}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        null,
+        <div
+          className="blog-item"
+        >
+          <div
+            className="float-right tiny-font"
+          >
+            <span
+              id="cancelBtn"
+            >
+              Cancel
+            </span>
+             | 
+            <span
+              id="submitbtn"
+            >
+              Submit
+            </span>
+          </div>
+          <input
+            maxLength="200"
+            name="blogheader"
+            onKeyUp={[Function]}
+            placeholder="Header goes here"
+            size="104"
+            type="text"
+          />
+          <br />
+          <textarea
+            cols="95"
+            name="blogbody"
+            placeholder="Body goes here"
+            rows="10"
+          />
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      null,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="float-right tiny-font"
+            >
+              <span
+                id="cancelBtn"
+              >
+                Cancel
+              </span>
+               | 
+              <span
+                id="submitbtn"
+              >
+                Submit
+              </span>
+            </div>,
+            <input
+              maxLength="200"
+              name="blogheader"
+              onKeyUp={[Function]}
+              placeholder="Header goes here"
+              size="104"
+              type="text"
+            />,
+            <br />,
+            <textarea
+              cols="95"
+              name="blogbody"
+              placeholder="Body goes here"
+              rows="10"
+            />,
+          ],
+          "className": "blog-item",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  id="cancelBtn"
+                >
+                  Cancel
+                </span>,
+                " | ",
+                <span
+                  id="submitbtn"
+                >
+                  Submit
+                </span>,
+              ],
+              "className": "float-right tiny-font",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Cancel",
+                  "id": "cancelBtn",
+                  "onClick": undefined,
+                },
+                "ref": null,
+                "rendered": "Cancel",
+                "type": "span",
+              },
+              " | ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Submit",
+                  "id": "submitbtn",
+                  "onClick": undefined,
+                },
+                "ref": null,
+                "rendered": "Submit",
+                "type": "span",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "maxLength": "200",
+              "name": "blogheader",
+              "onChange": undefined,
+              "onKeyUp": [Function],
+              "placeholder": "Header goes here",
+              "size": "104",
+              "type": "text",
+            },
+            "ref": [Function],
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "br",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "cols": "95",
+              "name": "blogbody",
+              "onChange": undefined,
+              "placeholder": "Body goes here",
+              "rows": "10",
+            },
+            "ref": [Function],
+            "rendered": null,
+            "type": "textarea",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          null,
+          <div
+            className="blog-item"
+          >
+            <div
+              className="float-right tiny-font"
+            >
+              <span
+                id="cancelBtn"
+              >
+                Cancel
+              </span>
+               | 
+              <span
+                id="submitbtn"
+              >
+                Submit
+              </span>
+            </div>
+            <input
+              maxLength="200"
+              name="blogheader"
+              onKeyUp={[Function]}
+              placeholder="Header goes here"
+              size="104"
+              type="text"
+            />
+            <br />
+            <textarea
+              cols="95"
+              name="blogbody"
+              placeholder="Body goes here"
+              rows="10"
+            />
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        null,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="float-right tiny-font"
+              >
+                <span
+                  id="cancelBtn"
+                >
+                  Cancel
+                </span>
+                 | 
+                <span
+                  id="submitbtn"
+                >
+                  Submit
+                </span>
+              </div>,
+              <input
+                maxLength="200"
+                name="blogheader"
+                onKeyUp={[Function]}
+                placeholder="Header goes here"
+                size="104"
+                type="text"
+              />,
+              <br />,
+              <textarea
+                cols="95"
+                name="blogbody"
+                placeholder="Body goes here"
+                rows="10"
+              />,
+            ],
+            "className": "blog-item",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    id="cancelBtn"
+                  >
+                    Cancel
+                  </span>,
+                  " | ",
+                  <span
+                    id="submitbtn"
+                  >
+                    Submit
+                  </span>,
+                ],
+                "className": "float-right tiny-font",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Cancel",
+                    "id": "cancelBtn",
+                    "onClick": undefined,
+                  },
+                  "ref": null,
+                  "rendered": "Cancel",
+                  "type": "span",
+                },
+                " | ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Submit",
+                    "id": "submitbtn",
+                    "onClick": undefined,
+                  },
+                  "ref": null,
+                  "rendered": "Submit",
+                  "type": "span",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "maxLength": "200",
+                "name": "blogheader",
+                "onChange": undefined,
+                "onKeyUp": [Function],
+                "placeholder": "Header goes here",
+                "size": "104",
+                "type": "text",
+              },
+              "ref": [Function],
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "cols": "95",
+                "name": "blogbody",
+                "onChange": undefined,
+                "placeholder": "Body goes here",
+                "rows": "10",
+              },
+              "ref": [Function],
+              "rendered": null,
+              "type": "textarea",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`<Blog /> should be possible to open Add new blog form 1`] = `
+ReactWrapper {
+  Symbol(enzyme.__unrendered__): <UNDEFINED
+    addblog={true}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "addblog": true,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": <div
+          class="float-right tiny-font"
+        >
+          <span
+            id="cancelBtn"
+          >
+            Cancel
+          </span>
+           | 
+          <span
+            id="submitbtn"
+          >
+            Submit
+          </span>
+        </div>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              id="cancelBtn"
+            >
+              Cancel
+            </span>,
+            " | ",
+            <span
+              id="submitbtn"
+            >
+              Submit
+            </span>,
+          ],
+          "className": "float-right tiny-font",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": <span
+              id="cancelBtn"
+            >
+              Cancel
+            </span>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Cancel",
+              "id": "cancelBtn",
+              "onClick": undefined,
+            },
+            "ref": null,
+            "rendered": Array [
+              "Cancel",
+            ],
+            "type": "span",
+          },
+          " | ",
+          Object {
+            "instance": <span
+              id="submitbtn"
+            >
+              Submit
+            </span>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Submit",
+              "id": "submitbtn",
+              "onClick": undefined,
+            },
+            "ref": null,
+            "rendered": Array [
+              "Submit",
+            ],
+            "type": "span",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": <input
+          maxlength="200"
+          name="blogheader"
+          placeholder="Header goes here"
+          size="104"
+          type="text"
+        />,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "maxLength": "200",
+          "name": "blogheader",
+          "onChange": undefined,
+          "onKeyUp": [Function],
+          "placeholder": "Header goes here",
+          "size": "104",
+          "type": "text",
+        },
+        "ref": [Function],
+        "rendered": Array [
+          undefined,
+        ],
+        "type": "input",
+      },
+      Object {
+        "instance": <br />,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": Array [
+          undefined,
+        ],
+        "type": "br",
+      },
+      Object {
+        "instance": <textarea
+          cols="95"
+          name="blogbody"
+          placeholder="Body goes here"
+          rows="10"
+        />,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "cols": "95",
+          "name": "blogbody",
+          "onChange": undefined,
+          "placeholder": "Body goes here",
+          "rows": "10",
+        },
+        "ref": [Function],
+        "rendered": Array [
+          undefined,
+        ],
+        "type": "textarea",
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "addblog": true,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": <div
+            class="float-right tiny-font"
+          >
+            <span
+              id="cancelBtn"
+            >
+              Cancel
+            </span>
+             | 
+            <span
+              id="submitbtn"
+            >
+              Submit
+            </span>
+          </div>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                id="cancelBtn"
+              >
+                Cancel
+              </span>,
+              " | ",
+              <span
+                id="submitbtn"
+              >
+                Submit
+              </span>,
+            ],
+            "className": "float-right tiny-font",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <span
+                id="cancelBtn"
+              >
+                Cancel
+              </span>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Cancel",
+                "id": "cancelBtn",
+                "onClick": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                "Cancel",
+              ],
+              "type": "span",
+            },
+            " | ",
+            Object {
+              "instance": <span
+                id="submitbtn"
+              >
+                Submit
+              </span>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Submit",
+                "id": "submitbtn",
+                "onClick": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                "Submit",
+              ],
+              "type": "span",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": <input
+            maxlength="200"
+            name="blogheader"
+            placeholder="Header goes here"
+            size="104"
+            type="text"
+          />,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "maxLength": "200",
+            "name": "blogheader",
+            "onChange": undefined,
+            "onKeyUp": [Function],
+            "placeholder": "Header goes here",
+            "size": "104",
+            "type": "text",
+          },
+          "ref": [Function],
+          "rendered": Array [
+            undefined,
+          ],
+          "type": "input",
+        },
+        Object {
+          "instance": <br />,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": Array [
+            undefined,
+          ],
+          "type": "br",
+        },
+        Object {
+          "instance": <textarea
+            cols="95"
+            name="blogbody"
+            placeholder="Body goes here"
+            rows="10"
+          />,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "cols": "95",
+            "name": "blogbody",
+            "onChange": undefined,
+            "placeholder": "Body goes here",
+            "rows": "10",
+          },
+          "ref": [Function],
+          "rendered": Array [
+            undefined,
+          ],
+          "type": "textarea",
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

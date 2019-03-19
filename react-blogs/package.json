@@ -1,5 +1,5 @@
 {
-  "name": "fe-test",
+  "name": "react-blogs",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,7 +7,6 @@
     "enzyme-adapter-react-16": "^1.10.0",
     "prop-types": "^15.7.2",
     "react": "^16.6.3",
-    "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.6.3",
     "react-router-dom": "^4.3.1",
     "react-scripts": "^2.1.1",
@@ -17,7 +16,7 @@
   },
   "proxy": "http://localhost:5000/",
   "scripts": {
-    "start": "set PORT=3006 && react-scripts start",
+    "start": "react-scripts start",
     "api": "json-server db.json --port 5000 --routes routes.json",
     "dev": "concurrently --kill-others-on-fail \"npm run api\" \"npm start\"",
     "build": "react-scripts build",

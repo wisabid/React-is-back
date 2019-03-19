@@ -1,6 +1,8 @@
 import React, { Component, lazy, Suspense } from 'react';
 import uuid from 'uuid';
-const Blog = lazy(() => import('./Blog'))
+import Search from './Search';
+const Blog = lazy(() => import('./Blog'));
+
 
 const loadingComp = () => {
     return (
@@ -293,9 +295,12 @@ class Blogs extends Component {
                 <>
                     <header>
                         <h2>B L O G S (<span className="action-new" title="Add New" onClick={this.handleAddnew.bind(this)}>+</span>)</h2>
-                        
-                        <span><input id="search-bar" type="text" placeholder="Search text" value={this.state.search} onChange={this.handleSearch.bind(this)}/></span>
+                        <Search 
+                            searchval={this.state.search}
+                            searchchange={this.handleSearch.bind(this)}
+                        />
                     </header>
+                    
                     { filteredPosts.length == 0
                         ? <div className="blog-item message-container" style={{color:"lightgreen"}}>No Search Results to display !</div>
                         : null

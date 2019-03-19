@@ -83,7 +83,7 @@ const Blog = (props) => {
                     </div>
                     <h3>{props.header}</h3>
                     <span className="tiny-font" style={{color:'darkseagreen', cursor: 'crosshair'}}>({displayDate(props.postdate)})</span>
-                    <p>{ (props.body.length > 80 && !props.showfull)? <ReadMore desc={props.body} readmore={props.entirebody}/>:props.body}</p>
+                    <p><pre>{ (props.body.length > 80 && !props.showfull)? <ReadMore desc={props.body} readmore={props.entirebody}/>:props.body}</pre></p>
                 </div>
             </>
         )

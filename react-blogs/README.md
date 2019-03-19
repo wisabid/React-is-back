@@ -31,3 +31,13 @@ Run ```npm install``` followed by ```npm run dev```
 
 Check App.js as example of how to perform the API calls needed to complete the assignment.
 The API for CRUD operations on articles uses [JSON Server](https://github.com/typicode/json-server)
+
+
+## Run Application 
+
+1) npm install
+2) npm run dev
+
+## Run tests 
+
+1) npm run test

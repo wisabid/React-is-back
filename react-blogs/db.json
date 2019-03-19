@@ -1,0 +1,10 @@
+{
+  "posts": [
+    {
+      "id": "b724bb62-b526-45fa-9001-222f7ff28a26",
+      "body": "Hi there!\n\nThank you for considering me for a position in your organisation. \nHere is a gist of react concepts I included as part of developing this simple BLOG application :  \n- Vanilla CSS  \n- Class Component Blogs  \n- ES6 Functional Components  \n- React Lazy loading using Suspense  \n- Life cycle hook \n- Conditional Rendering of Components \n- Higher Order Component (HOC) for translating props \n- Proptypes \n- React memoization \n- Jest & Enzyme Tests \n- CSS3 animation without a react module \n- One way binding with Search Functionality \n- Snapshot matching tests. \n\nOne thing which I did not use in here is Redux for obvious reasons. \n\nThe following are the functionalities covered as part of this test : \n1) Listing all blog posts, with descending order based on creation date\n2) Display an \"add\" button which allow the user to insert a new post\n3) Every blog post should have a delete button that will allow the user to remove the post\n4) Simple search input field so that user can search/filter articles\n5) Display an \"edit\" button on each article that allows changes to the content\n6) Limit the initially shown content of articles that exceed 80 characters with a \"read more\" link\n7) Testing React components\nThank you for your time. Look forward to hearing from you!\n\nYou are awesome!\n- Abid",
+      "header": "SS FE Test",
+      "timestamp": "2019-03-14T18:05:46.737Z"
+    }
+  ]
+}

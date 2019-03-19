@@ -1,0 +1,349 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Blogs /> <Blogs /> should render correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Blogs />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <header>
+          <h2>
+            B L O G S (
+            <span
+              className="action-new"
+              onClick={[Function]}
+              title="Add New"
+            >
+              +
+            </span>
+            )
+          </h2>
+          <Search
+            searchchange={[Function]}
+            searchval=""
+          />
+        </header>,
+        <div
+          className="blog-item message-container"
+          style={
+            Object {
+              "color": "lightgreen",
+            }
+          }
+        >
+          No Search Results to display !
+        </div>,
+        <UNDEFINED
+          fallback={
+            <h1>
+              Loading...
+            </h1>
+          }
+        />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2>
+              B L O G S (
+              <span
+                className="action-new"
+                onClick={[Function]}
+                title="Add New"
+              >
+                +
+              </span>
+              )
+            </h2>,
+            <Search
+              searchchange={[Function]}
+              searchval=""
+            />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "B L O G S (",
+                <span
+                  className="action-new"
+                  onClick={[Function]}
+                  title="Add New"
+                >
+                  +
+                </span>,
+                ")",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "B L O G S (",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "+",
+                  "className": "action-new",
+                  "onClick": [Function],
+                  "title": "Add New",
+                },
+                "ref": null,
+                "rendered": "+",
+                "type": "span",
+              },
+              ")",
+            ],
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "searchchange": [Function],
+              "searchval": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "header",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "No Search Results to display !",
+          "className": "blog-item message-container",
+          "style": Object {
+            "color": "lightgreen",
+          },
+        },
+        "ref": null,
+        "rendered": "No Search Results to display !",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [],
+          "fallback": <h1>
+            Loading...
+          </h1>,
+        },
+        "ref": null,
+        "rendered": Array [],
+        "type": Symbol(react.suspense),
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <header>
+            <h2>
+              B L O G S (
+              <span
+                className="action-new"
+                onClick={[Function]}
+                title="Add New"
+              >
+                +
+              </span>
+              )
+            </h2>
+            <Search
+              searchchange={[Function]}
+              searchval=""
+            />
+          </header>,
+          <div
+            className="blog-item message-container"
+            style={
+              Object {
+                "color": "lightgreen",
+              }
+            }
+          >
+            No Search Results to display !
+          </div>,
+          <UNDEFINED
+            fallback={
+              <h1>
+                Loading...
+              </h1>
+            }
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                B L O G S (
+                <span
+                  className="action-new"
+                  onClick={[Function]}
+                  title="Add New"
+                >
+                  +
+                </span>
+                )
+              </h2>,
+              <Search
+                searchchange={[Function]}
+                searchval=""
+              />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "B L O G S (",
+                  <span
+                    className="action-new"
+                    onClick={[Function]}
+                    title="Add New"
+                  >
+                    +
+                  </span>,
+                  ")",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "B L O G S (",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "+",
+                    "className": "action-new",
+                    "onClick": [Function],
+                    "title": "Add New",
+                  },
+                  "ref": null,
+                  "rendered": "+",
+                  "type": "span",
+                },
+                ")",
+              ],
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "searchchange": [Function],
+                "searchval": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "header",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "No Search Results to display !",
+            "className": "blog-item message-container",
+            "style": Object {
+              "color": "lightgreen",
+            },
+          },
+          "ref": null,
+          "rendered": "No Search Results to display !",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [],
+            "fallback": <h1>
+              Loading...
+            </h1>,
+          },
+          "ref": null,
+          "rendered": Array [],
+          "type": Symbol(react.suspense),
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
