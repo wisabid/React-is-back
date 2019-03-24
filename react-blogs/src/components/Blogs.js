@@ -1,7 +1,10 @@
 import React, { Component, lazy, Suspense } from 'react';
 import uuid from 'uuid';
 import Search from './Search';
+import { connect } from 'react-redux';
+import * as actionCreator from '../store/actions/actionAddblog';
 const Blog = lazy(() => import('./Blog'));
+
 
 
 const loadingComp = () => {
@@ -10,11 +13,10 @@ const loadingComp = () => {
     )
 }
 
-class Blogs extends Component {
+export class Blogs extends Component {
     constructor() {
         super();
         this.state = {
-            posts : [],
             editblog : false,
             addblog : false,
             blogheader: null,
@@ -50,9 +52,10 @@ class Blogs extends Component {
                     return blog;                    
                 });
 
-                this.setState({
-                    posts
-                })
+                this.props.loadposts(posts);
+                // this.setState({
+                //     posts
+                // })
             })
     }
 
@@ -69,7 +72,7 @@ class Blogs extends Component {
         let editblog = id;
         console.log(editblog)
 
-        let blog = this.state.posts.filter((item) => item.id === id);
+        let blog = this.props.posts.filter((item) => item.id === id);
         this.setBlogsNewState({
             editblog,
             blogheader : blog[0].header,
@@ -88,15 +91,15 @@ class Blogs extends Component {
         this.makeApiCall(`api/posts/${id}`, config)
             .then((resp) => {
                 if (resp) {
-                    let delindex = this.state.posts.findIndex(x => x.id == id)
-                    let posts = this.state.posts.filter(blogitem => blogitem.id !== id) 
+                    let delindex = this.props.posts.findIndex(x => x.id == id)
+                    let posts = this.props.posts.filter(blogitem => blogitem.id !== id) 
                     let messageId = '';
                     if (posts.length) {
                         messageId = posts[0].id;
                         //newState = {...posts, messageid : newState[0].id}
                     }
+                    this.props.loadposts(posts);
                     that.setBlogsNewState({
-                        posts : posts,
                         editblog : false,
                         message : 'Succesfully Deleted !',
                         messageid : messageId
@@ -123,7 +126,7 @@ class Blogs extends Component {
 
     handleUpdate =(id) => {
         if (this.state.blogbody && this.state.blogheader) {
-            let blog = this.state.posts.reduce((all, blog, index) => {
+            let blog = this.props.posts.reduce((all, blog, index) => {
                 if (blog.id === id) {
                     delete blog.edit;
                     blog.header = this.state.blogheader;
@@ -144,14 +147,14 @@ class Blogs extends Component {
             this.makeApiCall(`api/posts/${id}`, config)
                 .then((resp) => {
                     if (resp) {
-                        let posts = this.state.posts.map((blogitem) => {
+                        let posts = this.props.posts.map((blogitem) => {
                             if (blogitem.id == id) {
                                 blogitem = blog;
                             }
                             return blogitem;
                         });
+                        this.props.loadposts(posts);
                         that.setBlogsNewState({
-                            posts,
                             editblog : false,
                             blogheader: null,
                             blogbody : null,
@@ -211,8 +214,9 @@ class Blogs extends Component {
             this.makeApiCall(`api/posts/`, config)
                 .then((resp) => {
                     if (resp) {
-                        let posts = this.state.posts;
+                        let posts = this.props.posts;
                         posts.unshift(newblog);
+                        this.props.loadposts(posts);
                         that.setBlogsNewState({
                             posts,
                             editblog : false,
@@ -264,10 +268,22 @@ class Blogs extends Component {
         })
     }
 
+    mapDispatchToStore = (dispatch) => {
+        return {
+            callcalfie : dispatch({type : 'callalf'})
+        }
+    }
+
+    mapStateToProps = (state) => {
+        return {
+            alfie : state.alfie   
+        }
+    }
+
     render() {
         let filteredPosts = [];
-        if (this.state.posts.length) {
-            filteredPosts = this.state.posts.filter((item) => {
+        if (this.props.posts.length) {
+            filteredPosts = this.props.posts.filter((item) => {
                 return item.header.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1 || item.body.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
             })
         }
@@ -295,6 +311,7 @@ class Blogs extends Component {
                 <>
                     <header>
                         <h2>B L O G S (<span className="action-new" title="Add New" onClick={this.handleAddnew.bind(this)}>+</span>)</h2>
+                        <h3 onClick={() => this.props.addnblog(this.props.posts)}>{this.props.alfie}</h3>
                         <Search 
                             searchval={this.state.search}
                             searchchange={this.handleSearch.bind(this)}
@@ -336,4 +353,20 @@ class Blogs extends Component {
     }
 }
 
-export default Blogs;
+const mapDispatchToProps = (dispatch) => {
+    return {
+        callalfie : () => dispatch({type: 'callalf'}),
+        loadposts : (posts) => dispatch({type : 'loadposts', posts:posts}),
+        addnblog : (that) => dispatch(actionCreator.addblog(that))
+    }
+}
+
+
+const mapStateToProps = (state) => {
+    return {
+        alfie : state.rBlogs.alfie,
+        posts : state.rBlogs.posts
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Blogs);

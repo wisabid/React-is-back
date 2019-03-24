@@ -3,7 +3,9 @@
 exports[`<Blogs /> <Blogs /> should render correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Blogs />,
+  Symbol(enzyme.__unrendered__): <Blogs
+    posts={Array []}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -31,6 +33,9 @@ ShallowWrapper {
             </span>
             )
           </h2>
+          <h3
+            onClick={[Function]}
+          />
           <Search
             searchchange={[Function]}
             searchval=""
@@ -74,6 +79,9 @@ ShallowWrapper {
               </span>
               )
             </h2>,
+            <h3
+              onClick={[Function]}
+            />,
             <Search
               searchchange={[Function]}
               searchval=""
@@ -119,6 +127,18 @@ ShallowWrapper {
               ")",
             ],
             "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "h3",
           },
           Object {
             "instance": null,
@@ -186,6 +206,9 @@ ShallowWrapper {
               </span>
               )
             </h2>
+            <h3
+              onClick={[Function]}
+            />
             <Search
               searchchange={[Function]}
               searchval=""
@@ -229,6 +252,9 @@ ShallowWrapper {
                 </span>
                 )
               </h2>,
+              <h3
+                onClick={[Function]}
+              />,
               <Search
                 searchchange={[Function]}
                 searchval=""
@@ -274,6 +300,18 @@ ShallowWrapper {
                 ")",
               ],
               "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "h3",
             },
             Object {
               "instance": null,
