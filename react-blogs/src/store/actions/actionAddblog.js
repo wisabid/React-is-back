@@ -24,3 +24,9 @@ export const addblog = (obj) => {
         
     }
 }
+
+export const findSimilar = () => {
+    return dispatch => {
+        dispatch({type : 'findSimPosts'})
+    }
+}

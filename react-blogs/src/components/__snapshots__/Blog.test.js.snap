@@ -495,6 +495,7 @@ ShallowWrapper {
             "props": Object {
               "maxLength": "200",
               "name": "blogheader",
+              "onBlur": undefined,
               "onChange": undefined,
               "onKeyUp": [Function],
               "placeholder": "Header goes here",
@@ -682,6 +683,7 @@ ShallowWrapper {
               "props": Object {
                 "maxLength": "200",
                 "name": "blogheader",
+                "onBlur": undefined,
                 "onChange": undefined,
                 "onKeyUp": [Function],
                 "placeholder": "Header goes here",
@@ -861,6 +863,7 @@ ReactWrapper {
         "props": Object {
           "maxLength": "200",
           "name": "blogheader",
+          "onBlur": undefined,
           "onChange": undefined,
           "onKeyUp": [Function],
           "placeholder": "Header goes here",
@@ -1010,6 +1013,7 @@ ReactWrapper {
           "props": Object {
             "maxLength": "200",
             "name": "blogheader",
+            "onBlur": undefined,
             "onChange": undefined,
             "onKeyUp": [Function],
             "placeholder": "Header goes here",

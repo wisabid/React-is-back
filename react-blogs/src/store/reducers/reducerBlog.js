@@ -26,6 +26,9 @@ const reducerBlog = (state = initialState, action) => {
         case 'showsugg':
             newState = {...newState, alfie : 'Suggestions are....'};
             break;
+        case 'findSimPosts':
+            newState = {...newState, alfie : 'Similar posts are....'};
+            break;
         default:            
     }
     return newState;

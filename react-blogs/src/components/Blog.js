@@ -63,7 +63,7 @@ const Blog = (props) => {
                         <span id="cancelBtn" onClick={props.cancelAdd}>Cancel</span> | <span id="submitbtn" onClick={props.submitblog}>Submit</span>
                     </div>
                     <input ref={(input) => blogheader = input} placeholder="Header goes here" name="blogheader" type="text" size="104" onChange={props.bloghdr} 
-                    onKeyUp={handleBodyFocus} maxLength="200"/>
+                    onKeyUp={handleBodyFocus} maxLength="200" onBlur={props.similar}/>
                     <br />
                     <textarea ref={(input) => blogbody = input} placeholder="Body goes here" name="blogbody" cols="95" rows="10" onChange={props.blogbdy}></textarea>
                 </div>

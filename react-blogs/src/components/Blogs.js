@@ -301,6 +301,7 @@ export class Blogs extends Component {
                         bloghdr={this.handleInput.bind(this, null)}
                         blogbdy={this.handleInput.bind(this, null)}
                         error={this.state.error}
+                        similar={this.props.findSimilar}
                     />  
                     </Suspense>                  
                 </>
@@ -357,7 +358,8 @@ const mapDispatchToProps = (dispatch) => {
     return {
         callalfie : () => dispatch({type: 'callalf'}),
         loadposts : (posts) => dispatch({type : 'loadposts', posts:posts}),
-        addnblog : (that) => dispatch(actionCreator.addblog(that))
+        addnblog : (that) => dispatch(actionCreator.addblog(that)),
+        findSimilar : () => dispatch(actionCreator.findSimilar())
     }
 }
 
