@@ -25,7 +25,8 @@ export class Blogs extends Component {
             entirebody : '',
             error: '',
             message: '',
-            messageid : ''
+            messageid : '',
+            suggid : ''
         };
       }
 
@@ -118,7 +119,8 @@ export class Blogs extends Component {
         let newState = { 
             editblog : false,
             addblog : false,
-            error: ''
+            error: '',
+            suggid : ''
         }
         this.setBlogsNewState(newState);
     }
@@ -280,6 +282,12 @@ export class Blogs extends Component {
         }
     }
 
+    loadsugg = (idx) => {
+        this.setBlogsNewState({
+            suggid : idx
+        })
+    }
+
     render() {
         let filteredPosts = [];
         if (this.props.posts.length) {
@@ -301,7 +309,10 @@ export class Blogs extends Component {
                         bloghdr={this.handleInput.bind(this, null)}
                         blogbdy={this.handleInput.bind(this, null)}
                         error={this.state.error}
-                        similar={this.props.findSimilar}
+                        similar={() => this.props.findSimilar(this.props.posts, this.state.blogheader)}
+                        suggestions={this.props.simposts}
+                        loadsugg={this.loadsugg.bind(this)}
+                        suggid={this.state.suggid}
                     />  
                     </Suspense>                  
                 </>
@@ -359,7 +370,7 @@ const mapDispatchToProps = (dispatch) => {
         callalfie : () => dispatch({type: 'callalf'}),
         loadposts : (posts) => dispatch({type : 'loadposts', posts:posts}),
         addnblog : (that) => dispatch(actionCreator.addblog(that)),
-        findSimilar : () => dispatch(actionCreator.findSimilar())
+        findSimilar : (posts, bloghdr) => dispatch(actionCreator.findSimilar(posts, bloghdr))
     }
 }
 
@@ -367,7 +378,8 @@ const mapDispatchToProps = (dispatch) => {
 const mapStateToProps = (state) => {
     return {
         alfie : state.rBlogs.alfie,
-        posts : state.rBlogs.posts
+        posts : state.rBlogs.posts,
+        simposts : state.rBlogs.simposts
     }
 }
 

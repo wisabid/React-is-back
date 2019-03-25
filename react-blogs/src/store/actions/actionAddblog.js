@@ -1,18 +1,19 @@
 
 
-const checkSimilar = (posts) => {
-    console.log('From Middleware', posts)
-    let similarposts = posts.filter((item) => item.header.toLowerCase().indexOf('fe') !== -1)
-    if(similarposts.length) {
+const checkSimilar = (simposts) => {
+    // console.log('From Middleware', posts)
+    // let similarposts = posts.filter((item) => item.header.toLowerCase().indexOf('fe') !== -1)
+    // if(similarposts.length) {
         return {
-            type : 'showsugg'
+            type : 'findSimPosts',
+            simposts : simposts
         }
-    }
-    else {
-        return {
-            type : 'addnblog'
-        }
-    }
+    // }
+    // else {
+    //     return {
+    //         type : 'addnblog'
+    //     }
+    // }
 }
 
 export const addblog = (obj) => {
@@ -25,8 +26,26 @@ export const addblog = (obj) => {
     }
 }
 
-export const findSimilar = () => {
+export const findSimilar = (posts, bloghdr) => {
+    
     return dispatch => {
-        dispatch({type : 'findSimPosts'})
+        const words = bloghdr.split(' ');
+        console.log(words)
+        let similarposts = [];
+        let simposts;
+        words.map((itm) => {
+            simposts = posts.filter((item) => item.header.toLowerCase().indexOf(itm.toLowerCase()) !== -1)
+            similarposts.push(simposts)
+        })
+        debugger;
+        if (similarposts.length) {
+                dispatch(checkSimilar(similarposts))
+        }
+        else {
+            return {
+                type : 'showsugg'
+            }
+        }
+       
     }
 }

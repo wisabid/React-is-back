@@ -31,6 +31,9 @@
     transform: rotate(360deg);
   }
 }
+ul {
+  list-style: none;
+}
 /* Component Level CSS Styles */
 .float-right {
   float:right;
@@ -113,6 +116,11 @@ header {
   to {
     opacity: 1;
   }
+}
+
+.suggestions ul {
+  margin:0;
+  padding:0;
 }
 /* .blog-item .no-ptr.tiny-font {
   cursor: none;

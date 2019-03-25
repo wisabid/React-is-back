@@ -52,6 +52,7 @@ const Blog = (props) => {
         )
     }
     else if (props.addblog) {
+        debugger;
         return (
             <>
                 { props.msgdisplay
@@ -66,7 +67,39 @@ const Blog = (props) => {
                     onKeyUp={handleBodyFocus} maxLength="200" onBlur={props.similar}/>
                     <br />
                     <textarea ref={(input) => blogbody = input} placeholder="Body goes here" name="blogbody" cols="95" rows="10" onChange={props.blogbdy}></textarea>
+                    
                 </div>
+                {props.suggestions.length
+                        ?<><h4>Existing Similar Posts - Take a look ...</h4>
+                        <div className="blog-item suggestions">                            
+                            <ul>
+                                {(
+                                    props.suggestions.map((item, idx) => {
+                                        if (props.suggid === idx) {
+                                            return (
+                                                <li key={idx} onClick={() => props.loadsugg(idx)}>{item.header}<br />
+                                                <pre>{item.body}</pre>
+                                                </li>
+                                            )
+                                        }
+                                        else {
+                                            return (
+                                                <li key={idx} onClick={() => props.loadsugg(idx)}>{item.header}</li>
+                                            )
+                                        }
+
+                                        
+                                    })
+                                )}                                
+                            </ul>
+                            {props.suggid !== ''
+                                ?<p></p>
+                                : null
+                            }
+                            
+                        </div></>
+                        : null
+                }
             </>
         )
     }

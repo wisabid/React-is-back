@@ -1,17 +1,10 @@
 const initialState = {
     alfie : 'Who is Alfie?',
     posts : [],
-    editblog : false,
-    addblog : false,
-    blogheader: null,
-    blogbody: null,
-    search: '',
-    entirebody : '',
-    error: '',
-    message: '',
-    messageid : ''
+    simposts : []
 }
 const reducerBlog = (state = initialState, action) => {
+    debugger;
     let newState = {...state};
     switch(action.type) {
         case 'callalf': 
@@ -27,7 +20,7 @@ const reducerBlog = (state = initialState, action) => {
             newState = {...newState, alfie : 'Suggestions are....'};
             break;
         case 'findSimPosts':
-            newState = {...newState, alfie : 'Similar posts are....'};
+            newState = {...newState, simposts : action.simposts};
             break;
         default:            
     }
