@@ -20,6 +20,7 @@ const reducerBlog = (state = initialState, action) => {
             newState = {...newState, alfie : 'Suggestions are....'};
             break;
         case 'findSimPosts':
+            debugger;
             newState = {...newState, simposts : action.simposts};
             break;
         default:            

@@ -122,6 +122,13 @@ header {
   margin:0;
   padding:0;
 }
+.suggestions ul li {
+  margin: 10px 0;
+  background: #fff;
+  border-radius: 5px;
+  color: #0073b1;
+  padding: 10px;
+}
 /* .blog-item .no-ptr.tiny-font {
   cursor: none;
 } */

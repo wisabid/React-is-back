@@ -28,24 +28,42 @@ export const addblog = (obj) => {
 
 export const findSimilar = (posts, bloghdr) => {
     
-    return dispatch => {
-        const words = bloghdr.split(' ');
-        console.log(words)
-        let similarposts = [];
-        let simposts;
-        words.map((itm) => {
-            simposts = posts.filter((item) => item.header.toLowerCase().indexOf(itm.toLowerCase()) !== -1)
-            similarposts.push(simposts)
-        })
-        debugger;
-        if (similarposts.length) {
-                dispatch(checkSimilar(similarposts))
+    if (bloghdr) {
+        return dispatch => {
+            const words = bloghdr.split(' ');
+            console.log(words)
+            let similarposts = [];
+            let simposts;
+            let prm = new Promise((resolve, reject) => {
+                words.forEach((itm) => {
+                    simposts = posts.filter((item) => item.header.toLowerCase().indexOf(itm.toLowerCase()) !== -1)
+                    console.log(simposts);
+                    similarposts.push(simposts)
+                    console.log(similarposts);
+                });
+                if (similarposts.length) {
+                    resolve(similarposts[0]);                
+                }
+                else {
+                    reject('err');
+                }
+
+            }).then((simposts) => {
+                dispatch(checkSimilar(simposts))
+            }).catch((err) => {
+                console.error(err);
+            })
+            
+            
+            // else {
+            //     return {
+            //         type : 'showsugg'
+            //     }
+            // }
+        
         }
-        else {
-            return {
-                type : 'showsugg'
-            }
-        }
-       
+    }
+    else {
+        
     }
 }

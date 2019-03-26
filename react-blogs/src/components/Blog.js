@@ -75,6 +75,7 @@ const Blog = (props) => {
                             <ul>
                                 {(
                                     props.suggestions.map((item, idx) => {
+                                        debugger;
                                         if (props.suggid === idx) {
                                             return (
                                                 <li key={idx} onClick={() => props.loadsugg(idx)}>{item.header}<br />
@@ -83,6 +84,7 @@ const Blog = (props) => {
                                             )
                                         }
                                         else {
+                                            debugger;
                                             return (
                                                 <li key={idx} onClick={() => props.loadsugg(idx)}>{item.header}</li>
                                             )
