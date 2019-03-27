@@ -20,172 +20,34 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "children": Array [
-        <header>
-          <h2>
-            B L O G S (
-            <span
-              className="action-new"
-              onClick={[Function]}
-              title="Add New"
-            >
-              +
-            </span>
-            )
-          </h2>
-          <h3
-            onClick={[Function]}
-          />
-          <Search
-            searchchange={[Function]}
-            searchval=""
-          />
-        </header>,
-        <div
-          className="blog-item message-container"
-          style={
-            Object {
-              "color": "lightgreen",
-            }
-          }
-        >
-          No Search Results to display !
-        </div>,
-        <UNDEFINED
-          fallback={
-            <h1>
-              Loading...
-            </h1>
-          }
-        />,
-      ],
+      "children": [Function],
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <h2>
-              B L O G S (
-              <span
-                className="action-new"
-                onClick={[Function]}
-                title="Add New"
-              >
-                +
-              </span>
-              )
-            </h2>,
-            <h3
-              onClick={[Function]}
-            />,
-            <Search
-              searchchange={[Function]}
-              searchval=""
-            />,
-          ],
+    "rendered": [Function],
+    "type": Object {
+      "$$typeof": Symbol(react.context),
+      "_calculateChangedBits": null,
+      "_context": Object {
+        "$$typeof": Symbol(react.context),
+        "Consumer": [Circular],
+        "Provider": Object {
+          "$$typeof": Symbol(react.provider),
+          "_context": [Circular],
         },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                "B L O G S (",
-                <span
-                  className="action-new"
-                  onClick={[Function]}
-                  title="Add New"
-                >
-                  +
-                </span>,
-                ")",
-              ],
-            },
-            "ref": null,
-            "rendered": Array [
-              "B L O G S (",
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "+",
-                  "className": "action-new",
-                  "onClick": [Function],
-                  "title": "Add New",
-                },
-                "ref": null,
-                "rendered": "+",
-                "type": "span",
-              },
-              ")",
-            ],
-            "type": "h2",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": undefined,
-              "onClick": [Function],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "h3",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "searchchange": [Function],
-              "searchval": "",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-        ],
-        "type": "header",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "No Search Results to display !",
-          "className": "blog-item message-container",
-          "style": Object {
-            "color": "lightgreen",
-          },
+        "_calculateChangedBits": null,
+        "_currentRenderer": null,
+        "_currentRenderer2": null,
+        "_currentValue": Object {
+          "changeTheme": [Function],
+          "theme": "linkedin",
         },
-        "ref": null,
-        "rendered": "No Search Results to display !",
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "children": Array [],
-          "fallback": <h1>
-            Loading...
-          </h1>,
+        "_currentValue2": Object {
+          "changeTheme": [Function],
+          "theme": "linkedin",
         },
-        "ref": null,
-        "rendered": Array [],
-        "type": Symbol(react.suspense),
+        "_threadCount": 0,
       },
-    ],
-    "type": Symbol(react.fragment),
+    },
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -193,172 +55,34 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "children": Array [
-          <header>
-            <h2>
-              B L O G S (
-              <span
-                className="action-new"
-                onClick={[Function]}
-                title="Add New"
-              >
-                +
-              </span>
-              )
-            </h2>
-            <h3
-              onClick={[Function]}
-            />
-            <Search
-              searchchange={[Function]}
-              searchval=""
-            />
-          </header>,
-          <div
-            className="blog-item message-container"
-            style={
-              Object {
-                "color": "lightgreen",
-              }
-            }
-          >
-            No Search Results to display !
-          </div>,
-          <UNDEFINED
-            fallback={
-              <h1>
-                Loading...
-              </h1>
-            }
-          />,
-        ],
+        "children": [Function],
       },
       "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <h2>
-                B L O G S (
-                <span
-                  className="action-new"
-                  onClick={[Function]}
-                  title="Add New"
-                >
-                  +
-                </span>
-                )
-              </h2>,
-              <h3
-                onClick={[Function]}
-              />,
-              <Search
-                searchchange={[Function]}
-                searchval=""
-              />,
-            ],
+      "rendered": [Function],
+      "type": Object {
+        "$$typeof": Symbol(react.context),
+        "_calculateChangedBits": null,
+        "_context": Object {
+          "$$typeof": Symbol(react.context),
+          "Consumer": [Circular],
+          "Provider": Object {
+            "$$typeof": Symbol(react.provider),
+            "_context": [Circular],
           },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  "B L O G S (",
-                  <span
-                    className="action-new"
-                    onClick={[Function]}
-                    title="Add New"
-                  >
-                    +
-                  </span>,
-                  ")",
-                ],
-              },
-              "ref": null,
-              "rendered": Array [
-                "B L O G S (",
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "+",
-                    "className": "action-new",
-                    "onClick": [Function],
-                    "title": "Add New",
-                  },
-                  "ref": null,
-                  "rendered": "+",
-                  "type": "span",
-                },
-                ")",
-              ],
-              "type": "h2",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": undefined,
-                "onClick": [Function],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "h3",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "searchchange": [Function],
-                "searchval": "",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
-          "type": "header",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "No Search Results to display !",
-            "className": "blog-item message-container",
-            "style": Object {
-              "color": "lightgreen",
-            },
+          "_calculateChangedBits": null,
+          "_currentRenderer": null,
+          "_currentRenderer2": null,
+          "_currentValue": Object {
+            "changeTheme": [Function],
+            "theme": "linkedin",
           },
-          "ref": null,
-          "rendered": "No Search Results to display !",
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "children": Array [],
-            "fallback": <h1>
-              Loading...
-            </h1>,
+          "_currentValue2": Object {
+            "changeTheme": [Function],
+            "theme": "linkedin",
           },
-          "ref": null,
-          "rendered": Array [],
-          "type": Symbol(react.suspense),
+          "_threadCount": 0,
         },
-      ],
-      "type": Symbol(react.fragment),
+      },
     },
   ],
   Symbol(enzyme.__options__): Object {

@@ -3,6 +3,8 @@ import uuid from 'uuid';
 import Search from './Search';
 import { connect } from 'react-redux';
 import * as actionCreator from '../store/actions/actionAddblog';
+
+import ThemeContext from '../context/theme-context';
 const Blog = lazy(() => import('./Blog'));
 
 
@@ -309,7 +311,12 @@ export class Blogs extends Component {
                         bloghdr={this.handleInput.bind(this, null)}
                         blogbdy={this.handleInput.bind(this, null)}
                         error={this.state.error}
-                        similar={() => this.props.findSimilar(this.props.posts, this.state.blogheader)}
+                        similar={() => {
+                            if (this.state.blogheader)
+                                return this.props.findSimilar(this.props.posts, this.state.blogheader)
+                            else 
+                                return
+                        }}
                         suggestions={this.props.simposts}
                         loadsugg={this.loadsugg.bind(this)}
                         suggid={this.state.suggid}
@@ -320,46 +327,51 @@ export class Blogs extends Component {
         }
         else {
             return (
-                <>
-                    <header>
-                        <h2>B L O G S (<span className="action-new" title="Add New" onClick={this.handleAddnew.bind(this)}>+</span>)</h2>
-                        <h3 onClick={() => this.props.addnblog(this.props.posts)}>{this.props.alfie}</h3>
-                        <Search 
-                            searchval={this.state.search}
-                            searchchange={this.handleSearch.bind(this)}
-                        />
-                    </header>
-                    
-                    { filteredPosts.length == 0
-                        ? <div className="blog-item message-container" style={{color:"lightgreen"}}>No Search Results to display !</div>
-                        : null
-                    }
-                    <Suspense fallback={loadingComp()}>
-                    {
-                        filteredPosts.map(blog => {
-                            return (  
-                                <Blog 
-                                    header={(this.state.editblog === blog.id) ? this.state.blogheader : blog.header} 
-                                    body={(this.state.editblog === blog.id) ? this.state.blogbody : blog.body} 
-                                    key={blog.id} 
-                                    editBlog={this.handleEdit.bind(this, blog.id)} 
-                                    deleteBlog={this.handleDelete.bind(this, blog.id)}  
-                                    edit={ (this.state.editblog === blog.id) ?true:false} 
-                                    cancelEdit={this.handleCancel.bind(this, blog.id)}
-                                    updateBlog={this.handleUpdate.bind(this, blog.id)}
-                                    postdate={blog.timestamp}
-                                    bloghdr={this.handleInput.bind(this, blog.id)}
-                                    blogbdy={this.handleInput.bind(this, blog.id)}
-                                    entirebody={this.displayEntireBody.bind(this, blog.id)}
-                                    showfull={(this.state.entirebody === blog.id) ?this.state.entirebody:false}
-                                    error={(this.state.editblog === blog.id && this.state.error) ?this.state.error: ''}
-                                    message={(this.state.messageid === blog.id && this.state.message) ?this.state.message: ''}
+                <ThemeContext.Consumer>
+                    {context => (
+                        <div className={context.theme}>
+                            <header>
+                                <h2>B L O G S (<span className="action-new" title="Add New" onClick={this.handleAddnew.bind(this)}>+</span>)</h2>
+                                <h6 onClick={context.changeTheme.bind(this)}>Change Theme</h6>
+                                <Search 
+                                    searchval={this.state.search}
+                                    searchchange={this.handleSearch.bind(this)}
                                 />
-                            )
-                        })
-                    }
-                    </Suspense>       
-                </>
+                            </header>
+                            
+                            { filteredPosts.length == 0
+                                ? <div className="blog-item message-container" style={{color:"lightgreen"}}>No Search Results to display !</div>
+                                : null
+                            }
+                            <Suspense fallback={loadingComp()}>
+                            {
+                                filteredPosts.map(blog => {
+                                    return (  
+                                        <Blog 
+                                            header={(this.state.editblog === blog.id) ? this.state.blogheader : blog.header} 
+                                            body={(this.state.editblog === blog.id) ? this.state.blogbody : blog.body} 
+                                            key={blog.id} 
+                                            editBlog={this.handleEdit.bind(this, blog.id)} 
+                                            deleteBlog={this.handleDelete.bind(this, blog.id)}  
+                                            edit={ (this.state.editblog === blog.id) ?true:false} 
+                                            cancelEdit={this.handleCancel.bind(this, blog.id)}
+                                            updateBlog={this.handleUpdate.bind(this, blog.id)}
+                                            postdate={blog.timestamp}
+                                            bloghdr={this.handleInput.bind(this, blog.id)}
+                                            blogbdy={this.handleInput.bind(this, blog.id)}
+                                            entirebody={this.displayEntireBody.bind(this, blog.id)}
+                                            showfull={(this.state.entirebody === blog.id) ?this.state.entirebody:false}
+                                            error={(this.state.editblog === blog.id && this.state.error) ?this.state.error: ''}
+                                            message={(this.state.messageid === blog.id && this.state.message) ?this.state.message: ''}
+                                        />
+                                    )
+                                })
+                            }
+                            </Suspense>       
+                        </div>
+                    )}
+                    
+                </ThemeContext.Consumer>
             )
         }
     }

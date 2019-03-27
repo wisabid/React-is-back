@@ -1,6 +1,13 @@
 .App {
   text-align: center;
+}
+
+.App .linkedin{
   color:#0073b1;
+}
+
+.App .blackey{
+  color:#000;
 }
 
 .App-logo {
@@ -19,8 +26,12 @@
   color: white;
 }
 
-.App-link {
+.linkedin .App-link {
   color: #61dafb;
+}
+
+.blackey .App-link {
+  color: #ccc;
 }
 
 @keyframes App-logo-spin {
@@ -38,21 +49,34 @@ ul {
 .float-right {
   float:right;
 }
+.linkedin .tiny-font {
+  color: #000;
+}
+.blackey .tiny-font {
+  color: blue;
+}
 .tiny-font {
   font-size: 11px;
   cursor: pointer;
-  color: #000;
   font-weight: bold;
+}
+.linkedin .blog-item {
+  background:#0073b1;
+  color:#fff;
+}
+.blackey .blog-item {
+  background:#ddd;
+  color:#000;
 }
 .blog-item {
   /* background : #bbdefb; */
-  background:#0073b1;
+ 
   padding : 10px;
   margin: 10px;
   border-radius: 5px;
   text-align: left;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color:#fff;
+  
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
   animation: 0.3s  ease-in 1 render-animation;
 }

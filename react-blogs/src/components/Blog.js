@@ -70,7 +70,7 @@ const Blog = (props) => {
                     
                 </div>
                 {props.suggestions.length
-                        ?<><h4>Existing Similar Posts - Take a look ...</h4>
+                        ?<><h4>Avoid Duplicates ! Take a look at existing blogs...</h4>
                         <div className="blog-item suggestions">                            
                             <ul>
                                 {(
