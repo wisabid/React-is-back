@@ -6,17 +6,17 @@ describe('<Blog />', () => {
     const clickFn = jest.fn();
   
     it('renders Blog component without crashing', () => {
-      const component = shallow(<Blog addblog={true}/>);
+      const component = shallow(<Blog addblog={true} suggestions={[]}/>);
       expect(component).toMatchSnapshot();
     })
   
     it('Add New link should display an input element for adding up a new blog', () => {
-      const wrapper = shallow(<Blog addblog={true}/>);
+      const wrapper = shallow(<Blog addblog={true} suggestions={[]}/>);
       expect(wrapper.find('input[name="blogheader"]')).toHaveLength(1);    
     })
 
     it('should be possible to open Add new blog form', () => {
-      const component = mount(<Blog addblog={true}/>);
+      const component = mount(<Blog addblog={true} suggestions={[]}/>);
       component
         .find('span#submitbtn')
         .simulate('click');
@@ -25,23 +25,23 @@ describe('<Blog />', () => {
     });
   
     it('Add New link should display an textarea element for adding up a new blog', () => {
-      const wrapper = shallow(<Blog addblog={true}/>);
+      const wrapper = shallow(<Blog addblog={true} suggestions={[]}/>);
       expect(wrapper.find('textarea[name="blogbody"]')).toHaveLength(1);    
     })
   
     it('Add blog should have a Submit button for adding up', () => {
-      const wrapper = shallow(<Blog addblog={true}/>);
+      const wrapper = shallow(<Blog addblog={true} suggestions={[]}/>);
       expect(wrapper.find('span#submitbtn')).toHaveLength(1);    
     })
   
     it('Submit click should call a function to submit', () => {
-      const wrapper = shallow(<Blog addblog={true} submitblog={clickFn} />);
+      const wrapper = shallow(<Blog addblog={true} submitblog={clickFn} suggestions={[]}/>);
       wrapper.find('span#submitbtn').simulate('click');
       expect(clickFn).toHaveBeenCalled();
     })
   
     it('Cancel click should call a function to cancel', () => {
-      const wrapper = shallow(<Blog addblog={true} cancelAdd={clickFn} />);
+      const wrapper = shallow(<Blog addblog={true} cancelAdd={clickFn} suggestions={[]}/>);
       wrapper.find('span#cancelBtn').simulate('click');
       expect(clickFn).toHaveBeenCalled();
     })

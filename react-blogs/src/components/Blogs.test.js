@@ -1,6 +1,9 @@
 import React from 'react';
 import { Blogs } from './Blogs';
 import { shallow } from 'enzyme';
+import ThemeContext from '../context/theme-context';
+
+jest.mock('./theme-context')
 describe('<Blogs />', () => {
 
     /* 
