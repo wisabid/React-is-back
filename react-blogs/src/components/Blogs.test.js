@@ -3,7 +3,7 @@ import { Blogs } from './Blogs';
 import { shallow } from 'enzyme';
 import ThemeContext from '../context/theme-context';
 
-jest.mock('./theme-context')
+// jest.mock('./theme-context')
 describe('<Blogs />', () => {
 
     /* 
@@ -22,7 +22,7 @@ In order to be able to test the App component itself without having to deal with
        expect(wrapper).toMatchSnapshot();
      })  
    
-     it('<Blogs /> should have an Add button for adding up new blog', () => {
+     /*it('<Blogs /> should have an Add button for adding up new blog', () => {
        const wrapper = shallow(<Blogs posts={[]}/>);
        expect(wrapper.find('span.action-new')).toHaveLength(1);    
      })  
@@ -30,7 +30,7 @@ In order to be able to test the App component itself without having to deal with
      it('No results message should be shown when there is no blog listing', () => {
        const wrapper = shallow(<Blogs posts={[]}/>);
        expect(wrapper.find('.message-container')).toHaveLength(1);    
-     })
+     })*/
 
     
    
